@@ -1,0 +1,4 @@
+Bundle-Name: GrowLikes REST
+Bundle-SymbolicName: com.liferay.grow.likes.service.rest
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

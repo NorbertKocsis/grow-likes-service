@@ -1,0 +1,5 @@
+Bundle-Name: grow-likes-service
+Bundle-SymbolicName: com.liferay.grow.likes.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true

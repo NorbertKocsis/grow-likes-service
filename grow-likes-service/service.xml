@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_1_0.dtd">
+
+<service-builder auto-namespace-tables="false" package-path="com.liferay.grow.likes">
+	<namespace>Likes</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity
+		local-service="true"
+		name="AssetLike"
+		remote-service="false"
+		uuid="true"
+	>
+
+		<!-- PK fields -->
+
+		<column name="id" primary="true" type="long"></column>
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+		<column name="userId" type="long"></column>
+		<column name="assetEntryId" type="long"></column>
+		<column name="rank" type="long"></column>
+		<column name="createDate" type="Date"></column>
+		<finder name="UserId" return-type="Collection">
+			<finder-column name="userId"></finder-column>
+		</finder>
+		<finder name="AssetEntryId" return-type="Collection">
+			<finder-column name="assetEntryId"></finder-column>
+		</finder>
+		<finder name="U_A" return-type="Collection">
+			<finder-column name="userId"></finder-column>
+			<finder-column name="assetEntryId"></finder-column>
+		</finder>
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset"></reference>
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset"></reference>
+		<reference entity="AssetLink" package-path="com.liferay.portlet.asset"></reference>
+	</entity>
+</service-builder>

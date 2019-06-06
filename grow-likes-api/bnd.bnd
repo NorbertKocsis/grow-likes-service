@@ -1,0 +1,10 @@
+Bundle-Name: grow-likes-api
+Bundle-SymbolicName: com.liferay.grow.likes.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.grow.likes.exception,\
+	com.liferay.grow.likes.model,\
+	com.liferay.grow.likes.service,\
+	com.liferay.grow.likes.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../grow-likes-service/service.xml

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.grow.likes.model.AssetLike">
+		<field name="uuid" type="String" />
+		<field name="id" type="long" />
+		<field name="userId" type="long" />
+		<field name="assetEntryId" type="long" />
+		<field name="rank" type="long" />
+		<field name="createDate" type="Date" />
+	</model>
+</model-hints>
